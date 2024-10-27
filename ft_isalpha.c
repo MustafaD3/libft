@@ -6,12 +6,12 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 13:29:00 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/20 01:23:26 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/28 00:03:07 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Alfabetik Karakter Kontrolu
+
 int	ft_isalpha(int i)
 {
 	if ((i >= 'A' && i <= 'Z') || (i >= 'a' && i <= 'z'))

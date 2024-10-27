@@ -6,13 +6,12 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 14:59:55 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/20 01:15:41 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/28 00:04:30 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//String başından ve sonundan silme yapar
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;

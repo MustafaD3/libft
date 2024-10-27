@@ -6,12 +6,12 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 21:23:09 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/21 18:19:10 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/28 00:03:29 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Number String To Integer
+
 int	ft_atoi(const char *str)
 {
 	int	i;

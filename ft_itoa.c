@@ -6,12 +6,12 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 00:37:55 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/22 21:27:42 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/28 00:02:55 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Number To String
+
 static size_t	get_digits(int n)
 {
 	size_t	i;

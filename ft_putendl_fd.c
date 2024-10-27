@@ -6,11 +6,11 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 15:35:24 by mdalkili          #+#    #+#             */
-/*   Updated: 2024/10/21 18:17:16 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/28 00:02:30 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

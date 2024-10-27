@@ -6,7 +6,7 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 13:28:36 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/21 18:16:09 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/28 00:02:20 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h> // don't forget this line it will be delete
-# include <string.h> // don't forget this line it will be delete
 
 typedef struct s_list
 {
