@@ -6,14 +6,13 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:53:46 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/10 15:05:07 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/11/05 00:06:04 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 int	ft_toupper(int i)
 {
+	i = (char)i;
 	if (i >= 'a' && i <= 'z')
 	{
 		i = i - 32;

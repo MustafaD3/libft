@@ -6,14 +6,13 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:02:13 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/10 15:06:46 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/11/05 00:05:55 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 int	ft_tolower(int i)
 {
+	i = (char)i;
 	if (i >= 'A' && i <= 'Z')
 	{
 		i = i + 32;

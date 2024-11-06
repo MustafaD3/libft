@@ -6,18 +6,33 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 00:37:55 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/28 00:02:55 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/11/01 23:01:22 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	set_variables(int *n, int *end, int *digits)
+{
+	if (*n < 0)
+	{
+		(*n) *= -1;
+		*digits = 1;
+		*end = 1;
+	}
+	else
+	{
+		*digits = 0;
+		*end = 0;
+	}
+}
 
 static size_t	get_digits(int n)
 {
 	size_t	i;
 
 	i = 1;
-	while (n > 10)
+	while (n > 9)
 	{
 		i++;
 		n /= 10;
@@ -28,26 +43,26 @@ static size_t	get_digits(int n)
 char	*ft_itoa(int n)
 {
 	char		*str_num;
-	size_t		digits;
-	long int	num;
+	int			digits;
+	int			end;
 
-	num = n;
-	digits = get_digits(n);
-	if (n < 0)
+	if (n == -2147483648)
+		return ((char *)"-2147483648");
+	else
 	{
-		num *= -1;
-		digits++;
+		set_variables(&n, &end, &digits);
+		digits += get_digits(n);
+		str_num = (char *)malloc(sizeof(char) * digits + 1);
+		if (!str_num)
+			return (NULL);
+		*(str_num + digits) = 0;
+		while (--digits >= end)
+		{
+			*(str_num + digits) = n % 10 + '0';
+			n /= 10;
+		}
+		if (end)
+			*(str_num + 0) = '-';
 	}
-	str_num = (char *)malloc(sizeof(char) * (digits + 1));
-	if (!str_num)
-		return (NULL);
-	*(str_num + digits) = 0;
-	while (digits--)
-	{
-		*(str_num + digits) = num % 10 + '0';
-		num = num / 10;
-	}
-	if (n < 0)
-		*(str_num + 0) = '-';
 	return (str_num);
 }

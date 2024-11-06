@@ -6,14 +6,13 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 13:46:13 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/28 00:03:05 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/31 00:04:29 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 int	ft_isascii(int i)
 {
+	i = (char)i;
 	if (i >= 0 && i <= 127)
 	{
 		return (1);

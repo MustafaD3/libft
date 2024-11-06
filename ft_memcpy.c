@@ -6,7 +6,7 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 14:13:39 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/21 17:53:16 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/31 23:49:36 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	srcstr = (unsigned char *)src;
 	deststr = (unsigned char *)dest;
 	i = 0;
-	if (!dest || !src)
-		return (0);
+	if (!src)
+		return ((void *)dest);
 	while (i < n)
 	{
 		deststr[i] = srcstr[i];

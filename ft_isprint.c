@@ -6,14 +6,13 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 13:52:21 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/28 00:02:58 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/10/30 23:59:46 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 int	ft_isprint(int i)
 {
+	i = (char)i;
 	if (i >= 32 && i <= 126)
 	{
 		return (1);

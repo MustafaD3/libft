@@ -6,7 +6,7 @@
 /*   By: mustafa <mustafa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 14:17:55 by mustafa           #+#    #+#             */
-/*   Updated: 2024/10/28 00:01:59 by mustafa          ###   ########.fr       */
+/*   Updated: 2024/11/05 00:05:44 by mustafa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,22 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	char	*str;
+	unsigned int	size;
+	const char		*firstc;
+	char			*address;
 
-	str = (char *)malloc(sizeof(*s) * (len + 1));
-	if (!str)
+	if (!s)
 		return (NULL);
-	i = 0;
-	while (s[i] && i >= start && i < len)
-	{
-		str[i] = s[i];
-		i++;
-	}
-	str[i] = 0;
-	return (str);
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	size = ft_strlen(s + start);
+	if (size < len)
+		len = size;
+	firstc = &s[start];
+	address = (char *)malloc(len + 1);
+	if (address == NULL)
+		return (NULL);
+	ft_memcpy(address, firstc, len);
+	address[len] = '\0';
+	return (address);
 }
